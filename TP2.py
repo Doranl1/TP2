@@ -1,3 +1,8 @@
+"""
+Exercice: TP2
+Nom: Liam Doran
+Groupe: 404
+"""
 import random
 minimum = 1
 maximum = 1000
