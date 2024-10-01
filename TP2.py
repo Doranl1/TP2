@@ -9,12 +9,17 @@ borne_maximum = 100
 jeu = 0
 
 
+def borne_choisi():
+    borne_minimum_usager = int(input("quel est le minimum?\n"))
+    borne_maximum_usager = int(input("quel est le minimum?\n"))
+    return borne_minimum_usager, borne_maximum_usager
+
+
 while jeu == 0:
     # choisir si l'usager veut choisir le borne
     borne_usager = str(input("voulez-vous choisir le minimum et maximum?\n"))
     if borne_usager == "oui":
-        borne_minimum = int(input("quel est le minimum?\n"))
-        borne_maximum = int(input("quel est le minimum?\n"))
+        borne_minimum, borne_maximum = borne_choisi()
     else:
         print("\n")
     # intro du jeu
